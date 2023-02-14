@@ -36,7 +36,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <form id="formulario" action="/action_page.php">
-                <h2>Preencha o cadastro</h2>
+                <h2 id="titleForm">Cadastre-se</h2>
                 <label for="primeiroNome">Nome completo:</label><br>
                 <input type="text" name="primeiroNome" id="primeiroNome" required><br>
                 <label for="email">E-mail:</label><br>
@@ -49,7 +49,7 @@
                 <input type="password" name="definaSenha" id="definaSenha" required><br>
                 <label for="confirmeSenha">Confirme a senha:</label><br>
                 <input type="password" name="confirmeSenha" id="confirmeSenha" required><br><br>
-                <input type="submit" value="Enviar" onclick="cadastroFinalizado()">
+                <input type="submit" value="Enviar" onclick="validarSenha(); finalizarCadastro()" id="botaoFormulario">
             </form>
         </div>
     </div>

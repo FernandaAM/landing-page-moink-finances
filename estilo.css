@@ -47,30 +47,12 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     font-size: larger;
-    color: antiquewhite;
+    color: rgb(255, 252, 248);
     background-color: rgb(245, 153, 168);
     border-radius: 15px;
     border-style: none;
     text-align: center;
 
-}
-
-#myModal {
-    position: relative;
-    left: 37%;
-    top: 29%;
-    width: 320px;
-    height: 270px;
-}
-
-#myModal #formulario {
-    display: block;
-    position: absolute;
-}
-
-fieldset {
-    width: 300px;
-    height: 250px;
 }
 
 .modal {
@@ -87,17 +69,24 @@ fieldset {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(198, 236, 230);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: min-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
 }
 
 .close {
-    color: #aaa;
+    display: inherit;
+    justify-content: end;
+    color: rgb(255, 63, 95);
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -106,4 +95,24 @@ fieldset {
     color: rgb(255, 131, 199);
     text-decoration: none;
     cursor: pointer;
+}
+
+#botaoFormulario {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 153, 168);
+    border-radius: 15px;
+    border-style: none;
+    text-align: center;
+}
+
+#titleForm {
+    text-align: center;
+    color: rgb(255, 63, 95);
 }

@@ -19,6 +19,18 @@ window.onclick = function(event) {
     }
 }
 
-function cadastroFinalizado(){
+function validarSenha(){
+    senha1 = document.getElementsByName("definaSenha").value;
+    senha2 = document.getElementsByName("confirmeSenha").value;
+
+    if (senha1 != senha2){
+        senha2.setCustomValidity("As senhas não conferem! Digite senhas iguais.");
+        return false;
+    }
+    return true;
+}
+
+function finalizarCadastro(){
     alert('Parabéns, agora você faz parte da comunidade de pessoas que possuem total controle sobre o dinheiro! Bem-vindo!');
 }
+
