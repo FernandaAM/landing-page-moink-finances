@@ -55,6 +55,24 @@ h1 {
 
 }
 
+#myModal {
+    position: relative;
+    left: 37%;
+    top: 29%;
+    width: 320px;
+    height: 270px;
+}
+
+#myModal #formulario {
+    display: block;
+    position: absolute;
+}
+
+fieldset {
+    width: 300px;
+    height: 250px;
+}
+
 .modal {
     display: none;
     position: fixed;
